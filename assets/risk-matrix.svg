@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#0a0e14"/>
+    </linearGradient>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.5" fill="#1a2030"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="560" fill="url(#bg)" rx="8"/>
+  <rect width="900" height="560" fill="url(#dots)" rx="8"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="900" height="36" fill="#161b22" rx="8"/>
+  <rect x="0" y="28" width="900" height="8" fill="#161b22"/>
+  <text x="450" y="23" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#e6edf3" text-anchor="middle">MATRIZ DE RISCO — Probabilidade x Impacto | TechAssist S.A.</text>
+  <rect x="0" y="35" width="900" height="2" fill="#ff8800" opacity="0.5"/>
+
+  <!-- Y axis label -->
+  <text x="25" y="310" font-family="Courier New, monospace" font-size="11" fill="#e6edf3" text-anchor="middle" font-weight="bold" transform="rotate(-90, 25, 310)">IMPACTO</text>
+
+  <!-- X axis label -->
+  <text x="500" y="550" font-family="Courier New, monospace" font-size="11" fill="#e6edf3" text-anchor="middle" font-weight="bold">PROBABILIDADE</text>
+
+  <!-- Y axis labels -->
+  <text x="55" y="98" font-family="Courier New, monospace" font-size="9" fill="#ff0000" text-anchor="middle">CATASTROFICO</text>
+  <text x="55" y="183" font-family="Courier New, monospace" font-size="9" fill="#ff4444" text-anchor="middle">CRITICO</text>
+  <text x="55" y="268" font-family="Courier New, monospace" font-size="9" fill="#ff8800" text-anchor="middle">ALTO</text>
+  <text x="55" y="353" font-family="Courier New, monospace" font-size="9" fill="#ffaa00" text-anchor="middle">MEDIO</text>
+  <text x="55" y="438" font-family="Courier New, monospace" font-size="9" fill="#44cc77" text-anchor="middle">BAIXO</text>
+
+  <!-- X axis labels -->
+  <text x="178" y="490" font-family="Courier New, monospace" font-size="9" fill="#555" text-anchor="middle">IMPROVAVEL</text>
+  <text x="318" y="490" font-family="Courier New, monospace" font-size="9" fill="#888" text-anchor="middle">POSSIVEL</text>
+  <text x="458" y="490" font-family="Courier New, monospace" font-size="9" fill="#aa8800" text-anchor="middle">PROVAVEL</text>
+  <text x="598" y="490" font-family="Courier New, monospace" font-size="9" fill="#ff8800" text-anchor="middle">QUASE CERTO</text>
+  <text x="738" y="490" font-family="Courier New, monospace" font-size="9" fill="#ff4444" text-anchor="middle">CERTO</text>
+
+  <!-- Grid cells (5x5) -->
+  <!-- Colors: low=green, medium=yellow, high=orange, critical=red, catastrophic=darkred -->
+  <!-- Axes: Y = 5 rows (45-480 range, each row 85px), X = 5 cols (95-865, each 154px) -->
+  <!-- rows from bottom: baixo y=400-480, medio y=315-400, alto y=230-315, critico y=145-230, catastrofico y=60-145 -->
+  <!-- cols: improvavel 100-253, possivel 254-407, provavel 408-561, quase certo 562-715, certo 716-865 -->
+
+  <!-- Row 5 (CATASTROFICO) -->
+  <rect x="100" y="60" width="153" height="84" rx="2" fill="#ffaa0008" stroke="#553300" stroke-width="0.5"/>
+  <rect x="254" y="60" width="153" height="84" rx="2" fill="#ff880015" stroke="#664400" stroke-width="0.5"/>
+  <rect x="408" y="60" width="153" height="84" rx="2" fill="#ff440020" stroke="#882200" stroke-width="0.5"/>
+  <rect x="562" y="60" width="153" height="84" rx="2" fill="#ff000030" stroke="#990000" stroke-width="0.5"/>
+  <rect x="716" y="60" width="149" height="84" rx="2" fill="#ff000040" stroke="#cc0000" stroke-width="0.5"/>
+
+  <!-- Row 4 (CRITICO) -->
+  <rect x="100" y="145" width="153" height="84" rx="2" fill="#ffaa0008" stroke="#444400" stroke-width="0.5"/>
+  <rect x="254" y="145" width="153" height="84" rx="2" fill="#ff880015" stroke="#664400" stroke-width="0.5"/>
+  <rect x="408" y="145" width="153" height="84" rx="2" fill="#ff440025" stroke="#882200" stroke-width="0.5"/>
+  <rect x="562" y="145" width="153" height="84" rx="2" fill="#ff000030" stroke="#990000" stroke-width="0.5"/>
+  <rect x="716" y="145" width="149" height="84" rx="2" fill="#ff000035" stroke="#cc0000" stroke-width="0.5"/>
+
+  <!-- Row 3 (ALTO) -->
+  <rect x="100" y="230" width="153" height="84" rx="2" fill="#44cc7710" stroke="#226633" stroke-width="0.5"/>
+  <rect x="254" y="230" width="153" height="84" rx="2" fill="#ffaa0010" stroke="#554400" stroke-width="0.5"/>
+  <rect x="408" y="230" width="153" height="84" rx="2" fill="#ff880020" stroke="#664400" stroke-width="0.5"/>
+  <rect x="562" y="230" width="153" height="84" rx="2" fill="#ff440025" stroke="#882200" stroke-width="0.5"/>
+  <rect x="716" y="230" width="149" height="84" rx="2" fill="#ff000030" stroke="#990000" stroke-width="0.5"/>
+
+  <!-- Row 2 (MEDIO) -->
+  <rect x="100" y="315" width="153" height="84" rx="2" fill="#44cc7710" stroke="#226633" stroke-width="0.5"/>
+  <rect x="254" y="315" width="153" height="84" rx="2" fill="#44cc7710" stroke="#226633" stroke-width="0.5"/>
+  <rect x="408" y="315" width="153" height="84" rx="2" fill="#ffaa0015" stroke="#554400" stroke-width="0.5"/>
+  <rect x="562" y="315" width="153" height="84" rx="2" fill="#ff880020" stroke="#664400" stroke-width="0.5"/>
+  <rect x="716" y="315" width="149" height="84" rx="2" fill="#ff440020" stroke="#882200" stroke-width="0.5"/>
+
+  <!-- Row 1 (BAIXO) -->
+  <rect x="100" y="400" width="153" height="84" rx="2" fill="#44cc7712" stroke="#115522" stroke-width="0.5"/>
+  <rect x="254" y="400" width="153" height="84" rx="2" fill="#44cc7710" stroke="#115522" stroke-width="0.5"/>
+  <rect x="408" y="400" width="153" height="84" rx="2" fill="#44cc7708" stroke="#226633" stroke-width="0.5"/>
+  <rect x="562" y="400" width="153" height="84" rx="2" fill="#ffaa0010" stroke="#554400" stroke-width="0.5"/>
+  <rect x="716" y="400" width="149" height="84" rx="2" fill="#ffaa0015" stroke="#554400" stroke-width="0.5"/>
+
+  <!-- Grid lines -->
+  <line x1="100" y1="60" x2="865" y2="60" stroke="#21262d" stroke-width="1"/>
+  <line x1="100" y1="145" x2="865" y2="145" stroke="#21262d" stroke-width="1"/>
+  <line x1="100" y1="230" x2="865" y2="230" stroke="#21262d" stroke-width="1"/>
+  <line x1="100" y1="315" x2="865" y2="315" stroke="#21262d" stroke-width="1"/>
+  <line x1="100" y1="400" x2="865" y2="400" stroke="#21262d" stroke-width="1"/>
+  <line x1="100" y1="484" x2="865" y2="484" stroke="#21262d" stroke-width="1"/>
+
+  <line x1="100" y1="60" x2="100" y2="484" stroke="#21262d" stroke-width="1"/>
+  <line x1="254" y1="60" x2="254" y2="484" stroke="#21262d" stroke-width="1"/>
+  <line x1="408" y1="60" x2="408" y2="484" stroke="#21262d" stroke-width="1"/>
+  <line x1="562" y1="60" x2="562" y2="484" stroke="#21262d" stroke-width="1"/>
+  <line x1="716" y1="60" x2="716" y2="484" stroke="#21262d" stroke-width="1"/>
+  <line x1="865" y1="60" x2="865" y2="484" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Risk bubbles with labels -->
+
+  <!-- R1: Exposicao API sem auth (VUL-004) - Provavel / Medio -->
+  <!-- x center of Provavel = 484, y center Medio = 357 -->
+  <circle cx="484" cy="357" r="22" fill="#ffaa0044" stroke="#ffaa00" stroke-width="2"/>
+  <text x="484" y="352" font-family="Courier New, monospace" font-size="8" fill="#ffaa00" text-anchor="middle" font-weight="bold">R1</text>
+  <text x="484" y="364" font-family="Courier New, monospace" font-size="7" fill="#aa7700" text-anchor="middle">Endpoint</text>
+  <text x="484" y="374" font-family="Courier New, monospace" font-size="7" fill="#aa7700" text-anchor="middle">exposto</text>
+
+  <!-- R2: Prompt Injection - Quase certo / Alto -->
+  <!-- x center = 638, y center Alto = 272 -->
+  <circle cx="638" cy="272" r="26" fill="#ff440044" stroke="#ff4444" stroke-width="2.5"/>
+  <text x="638" y="267" font-family="Courier New, monospace" font-size="8" fill="#ff4444" text-anchor="middle" font-weight="bold">R2</text>
+  <text x="638" y="279" font-family="Courier New, monospace" font-size="7" fill="#cc2222" text-anchor="middle">Prompt</text>
+  <text x="638" y="289" font-family="Courier New, monospace" font-size="7" fill="#cc2222" text-anchor="middle">Injection</text>
+
+  <!-- R3: Acesso AD via IA - Quase Certo / Critico -->
+  <!-- x = 638, y center Critico = 187 -->
+  <circle cx="638" cy="187" r="24" fill="#ff000044" stroke="#ff0000" stroke-width="2.5"/>
+  <text x="638" y="182" font-family="Courier New, monospace" font-size="8" fill="#ff4444" text-anchor="middle" font-weight="bold">R3</text>
+  <text x="638" y="194" font-family="Courier New, monospace" font-size="7" fill="#cc0000" text-anchor="middle">Acesso AD</text>
+  <text x="638" y="203" font-family="Courier New, monospace" font-size="7" fill="#cc0000" text-anchor="middle">via IA</text>
+
+  <!-- R4: Exfiltracao + Ransomware - Certo / Catastrofico -->
+  <!-- x = 790, y center Catastrofico = 102 -->
+  <circle cx="790" cy="102" r="30" fill="#ff000066" stroke="#ff0000" stroke-width="3"/>
+  <text x="790" y="95" font-family="Courier New, monospace" font-size="9" fill="#ff4444" text-anchor="middle" font-weight="bold">R4</text>
+  <text x="790" y="108" font-family="Courier New, monospace" font-size="7" fill="#cc0000" text-anchor="middle">Exfil +</text>
+  <text x="790" y="118" font-family="Courier New, monospace" font-size="7" fill="#cc0000" text-anchor="middle">Ransomware</text>
+
+  <!-- R5: Info disclosure (LLM06) - Quase certo / Medio -->
+  <circle cx="638" cy="357" r="20" fill="#4488ff33" stroke="#4488ff" stroke-width="1.5"/>
+  <text x="638" y="352" font-family="Courier New, monospace" font-size="8" fill="#4488ff" text-anchor="middle" font-weight="bold">R5</text>
+  <text x="638" y="365" font-family="Courier New, monospace" font-size="7" fill="#2255aa" text-anchor="middle">Info Disclos.</text>
+
+  <!-- R6: Criacao conta backdoor - Certo / Critico -->
+  <circle cx="790" cy="187" r="22" fill="#ff000055" stroke="#ff0000" stroke-width="2"/>
+  <text x="790" y="182" font-family="Courier New, monospace" font-size="8" fill="#ff4444" text-anchor="middle" font-weight="bold">R6</text>
+  <text x="790" y="194" font-family="Courier New, monospace" font-size="7" fill="#cc0000" text-anchor="middle">Backdoor</text>
+  <text x="790" y="203" font-family="Courier New, monospace" font-size="7" fill="#cc0000" text-anchor="middle">svc.phantom</text>
+
+  <!-- Legend -->
+  <rect x="100" y="500" width="760" height="45" rx="5" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+  <text x="480" y="516" font-family="Courier New, monospace" font-size="9" fill="#e6edf3" text-anchor="middle" font-weight="bold">LEGENDA DOS RISCOS</text>
+  <circle cx="115" cy="533" r="6" fill="#ffaa0044" stroke="#ffaa00" stroke-width="1.5"/>
+  <text x="124" y="537" font-family="Courier New, monospace" font-size="8" fill="#ccc">R1: Endpoint sem auth (VUL-004)</text>
+  <circle cx="315" cy="533" r="6" fill="#ff440044" stroke="#ff4444" stroke-width="1.5"/>
+  <text x="324" y="537" font-family="Courier New, monospace" font-size="8" fill="#ccc">R2: Prompt Injection (LLM01)</text>
+  <circle cx="520" cy="533" r="6" fill="#ff000044" stroke="#ff0000" stroke-width="1.5"/>
+  <text x="529" y="537" font-family="Courier New, monospace" font-size="8" fill="#ccc">R3: Acesso AD (LLM08)</text>
+  <circle cx="680" cy="533" r="8" fill="#ff000066" stroke="#ff0000" stroke-width="2"/>
+  <text x="691" y="537" font-family="Courier New, monospace" font-size="8" fill="#ccc">R4: Exfil+Ransomware (CRITICO)</text>
+
+  <text x="10" y="554" font-family="Courier New, monospace" font-size="8" fill="#333">Operacao Phantom Helper | Milvus Summit 2026 | Almir Meira Alves — Educa com Talento</text>
+</svg>

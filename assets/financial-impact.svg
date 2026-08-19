@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 540">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#0a0e14"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" style="stop-color:#ff0044"/>
+      <stop offset="100%" style="stop-color:#ff6688"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" style="stop-color:#ff4400"/>
+      <stop offset="100%" style="stop-color:#ff8866"/>
+    </linearGradient>
+    <linearGradient id="bar3" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" style="stop-color:#ff8800"/>
+      <stop offset="100%" style="stop-color:#ffaa44"/>
+    </linearGradient>
+    <linearGradient id="bar4" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" style="stop-color:#aa0088"/>
+      <stop offset="100%" style="stop-color:#cc44bb"/>
+    </linearGradient>
+    <linearGradient id="bar5" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" style="stop-color:#00aa44"/>
+      <stop offset="100%" style="stop-color:#44cc77"/>
+    </linearGradient>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.5" fill="#1a2030"/>
+    </pattern>
+  </defs>
+
+  <rect width="1100" height="540" fill="url(#bg)" rx="8"/>
+  <rect width="1100" height="540" fill="url(#dots)" rx="8"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="1100" height="36" fill="#161b22" rx="8"/>
+  <rect x="0" y="28" width="1100" height="8" fill="#161b22"/>
+  <text x="550" y="23" font-family="Courier New, monospace" font-size="13" font-weight="bold" fill="#e6edf3" text-anchor="middle">IMPACTO FINANCEIRO — TechAssist S.A. | R$ 4.080.000 de Perda</text>
+  <rect x="0" y="35" width="1100" height="2" fill="#ff4444" opacity="0.5"/>
+
+  <!-- Chart area -->
+  <!-- Y axis -->
+  <line x1="90" y1="60" x2="90" y2="390" stroke="#30363d" stroke-width="1.5"/>
+  <!-- X axis -->
+  <line x1="90" y1="390" x2="1060" y2="390" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Y axis labels (scale: 0 to 2.5M, chart height = 330px, each 500k = 66px) -->
+  <!-- 2.500.000 = 330px height = 60 to 390 -->
+  <!-- 1px = 2500000/330 = 7575.75/px   500000/7575 = 66px per 500k -->
+  <text x="83" y="394" font-family="Courier New, monospace" font-size="9" fill="#555" text-anchor="end">R$ 0</text>
+  <line x1="87" y1="390" x2="93" y2="390" stroke="#555" stroke-width="1"/>
+
+  <text x="83" y="328" font-family="Courier New, monospace" font-size="9" fill="#555" text-anchor="end">500k</text>
+  <line x1="87" y1="324" x2="93" y2="324" stroke="#555" stroke-width="1"/>
+  <line x1="93" y1="324" x2="1060" y2="324" stroke="#21262d" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <text x="83" y="262" font-family="Courier New, monospace" font-size="9" fill="#555" text-anchor="end">1M</text>
+  <line x1="87" y1="258" x2="93" y2="258" stroke="#555" stroke-width="1"/>
+  <line x1="93" y1="258" x2="1060" y2="258" stroke="#21262d" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <text x="83" y="196" font-family="Courier New, monospace" font-size="9" fill="#555" text-anchor="end">1.5M</text>
+  <line x1="87" y1="192" x2="93" y2="192" stroke="#555" stroke-width="1"/>
+  <line x1="93" y1="192" x2="1060" y2="192" stroke="#21262d" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <text x="83" y="130" font-family="Courier New, monospace" font-size="9" fill="#555" text-anchor="end">2M</text>
+  <line x1="87" y1="126" x2="93" y2="126" stroke="#555" stroke-width="1"/>
+  <line x1="93" y1="126" x2="1060" y2="126" stroke="#21262d" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <text x="83" y="68" font-family="Courier New, monospace" font-size="9" fill="#555" text-anchor="end">2.5M</text>
+  <line x1="87" y1="63" x2="93" y2="63" stroke="#555" stroke-width="1"/>
+  <line x1="93" y1="63" x2="1060" y2="63" stroke="#21262d" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- BAR 1: Multas LGPD R$2.500.000 = 330px height (60 to 390) -->
+  <!-- height = 2500000 * 330/2500000 = 330 -->
+  <rect x="115" y="60" width="130" height="330" rx="4" fill="url(#bar1)"/>
+  <rect x="115" y="60" width="130" height="15" rx="4" fill="#ff6688" opacity="0.5"/>
+  <text x="180" y="53" font-family="Courier New, monospace" font-size="11" fill="#ff4466" text-anchor="middle" font-weight="bold">R$ 2.500.000</text>
+  <text x="180" y="415" font-family="Courier New, monospace" font-size="10" fill="#ff8888" text-anchor="middle" font-weight="bold">Multas LGPD</text>
+  <text x="180" y="427" font-family="Courier New, monospace" font-size="8" fill="#883344" text-anchor="middle">Art.52 | ANPD</text>
+
+  <!-- BAR 2: Perda de Receita R$1.000.000 = 132px height -->
+  <!-- height = 1000000 * 330/2500000 = 132 -->
+  <rect x="280" y="258" width="130" height="132" rx="4" fill="url(#bar2)"/>
+  <rect x="280" y="258" width="130" height="15" rx="4" fill="#ff8866" opacity="0.5"/>
+  <text x="345" y="251" font-family="Courier New, monospace" font-size="11" fill="#ff6644" text-anchor="middle" font-weight="bold">R$ 1.000.000</text>
+  <text x="345" y="415" font-family="Courier New, monospace" font-size="10" fill="#ff8866" text-anchor="middle" font-weight="bold">Perda Receita</text>
+  <text x="345" y="427" font-family="Courier New, monospace" font-size="8" fill="#884422" text-anchor="middle">Cancelamentos</text>
+
+  <!-- BAR 3: Reconstrucao R$400.000 = 52.8px -->
+  <!-- height = 400000 * 330/2500000 = 52.8 ≈ 53 -->
+  <rect x="445" y="337" width="130" height="53" rx="4" fill="url(#bar3)"/>
+  <rect x="445" y="337" width="130" height="12" rx="4" fill="#ffaa44" opacity="0.5"/>
+  <text x="510" y="330" font-family="Courier New, monospace" font-size="11" fill="#ff9900" text-anchor="middle" font-weight="bold">R$ 400.000</text>
+  <text x="510" y="415" font-family="Courier New, monospace" font-size="10" fill="#ff8800" text-anchor="middle" font-weight="bold">Reconstrucao</text>
+  <text x="510" y="427" font-family="Courier New, monospace" font-size="8" fill="#885500" text-anchor="middle">Infra + Sistemas</text>
+
+  <!-- BAR 4: Resposta Incidente R$180.000 = 23.76px ≈ 24 -->
+  <rect x="610" y="366" width="130" height="24" rx="4" fill="url(#bar4)"/>
+  <text x="675" y="358" font-family="Courier New, monospace" font-size="11" fill="#cc44bb" text-anchor="middle" font-weight="bold">R$ 180.000</text>
+  <text x="675" y="415" font-family="Courier New, monospace" font-size="10" fill="#aa33aa" text-anchor="middle" font-weight="bold">Resp. Incidente</text>
+  <text x="675" y="427" font-family="Courier New, monospace" font-size="8" fill="#662266" text-anchor="middle">DFIR + Juridico</text>
+
+  <!-- Divider -->
+  <line x1="790" y1="60" x2="790" y2="450" stroke="#30363d" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="790" y="55" font-family="Courier New, monospace" font-size="9" fill="#444" text-anchor="middle">VS</text>
+
+  <!-- BAR 5: Prevention R$45.500 = 6px (barely visible - intentional!) -->
+  <!-- But let's make it at least 8px to see, then add label -->
+  <rect x="850" y="382" width="130" height="8" rx="3" fill="url(#bar5)"/>
+  <text x="915" y="375" font-family="Courier New, monospace" font-size="11" fill="#44cc77" text-anchor="middle" font-weight="bold">R$ 45.500</text>
+  <text x="915" y="415" font-family="Courier New, monospace" font-size="10" fill="#00ff88" text-anchor="middle" font-weight="bold">Prevencao</text>
+  <text x="915" y="427" font-family="Courier New, monospace" font-size="8" fill="#228844" text-anchor="middle">Poderia evitar TUDO</text>
+
+  <!-- Arrow and ROI annotation -->
+  <path d="M 915 370 L 915 350 L 790 350 L 790 340" stroke="#00ff88" stroke-width="1.5" fill="none" stroke-dasharray="3,2"/>
+  <rect x="820" y="440" width="190" height="28" rx="4" fill="#051505" stroke="#00ff88" stroke-width="1.5"/>
+  <text x="915" y="452" font-family="Courier New, monospace" font-size="9" fill="#00ff88" text-anchor="middle" font-weight="bold">ROI da Prevencao: 8.966%</text>
+  <text x="915" y="463" font-family="Courier New, monospace" font-size="8" fill="#228844" text-anchor="middle">R$ 1 investido = R$ 89,70 de perda evitada</text>
+
+  <!-- TOTAL box -->
+  <rect x="1000" y="60" width="90" height="390" rx="4" fill="#1a0505" stroke="#ff4444" stroke-width="2"/>
+  <rect x="1000" y="60" width="90" height="20" rx="4" fill="#ff444422"/>
+  <text x="1045" y="75" font-family="Courier New, monospace" font-size="9" fill="#ff4444" text-anchor="middle" font-weight="bold">TOTAL</text>
+  <text x="1045" y="200" font-family="Courier New, monospace" font-size="12" fill="#ff4444" text-anchor="middle" font-weight="bold" transform="rotate(-90, 1045, 200)">R$ 4.080.000</text>
+
+  <!-- Right side breakdown -->
+  <rect x="1000" y="410" width="90" height="25" rx="4" fill="#ff000015" stroke="#ff4444" stroke-width="1"/>
+  <text x="1045" y="426" font-family="Courier New, monospace" font-size="8" fill="#ff4444" text-anchor="middle" font-weight="bold">4.080.000</text>
+  <text x="1045" y="436" font-family="Courier New, monospace" font-size="7" fill="#882222" text-anchor="middle">R$ total</text>
+
+  <!-- Summary stats at bottom -->
+  <rect x="90" y="460" width="850" height="60" rx="5" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+
+  <text x="140" y="480" font-family="Courier New, monospace" font-size="10" fill="#ff4444" font-weight="bold">Multas LGPD:</text>
+  <text x="230" y="480" font-family="Courier New, monospace" font-size="10" fill="#ccc">61,3% do total</text>
+  <text x="140" y="495" font-family="Courier New, monospace" font-size="10" fill="#ff6600" font-weight="bold">Perda Receita:</text>
+  <text x="230" y="495" font-family="Courier New, monospace" font-size="10" fill="#ccc">24,5% do total</text>
+  <text x="140" y="510" font-family="Courier New, monospace" font-size="10" fill="#ffaa00" font-weight="bold">Reconstrucao:</text>
+  <text x="230" y="510" font-family="Courier New, monospace" font-size="10" fill="#ccc">9,8% do total</text>
+
+  <text x="400" y="480" font-family="Courier New, monospace" font-size="10" fill="#aa44bb" font-weight="bold">Resp. Incidente:</text>
+  <text x="500" y="480" font-family="Courier New, monospace" font-size="10" fill="#ccc">4,4% do total</text>
+  <text x="400" y="495" font-family="Courier New, monospace" font-size="10" fill="#00ff88" font-weight="bold">Custo prevencao:</text>
+  <text x="510" y="495" font-family="Courier New, monospace" font-size="10" fill="#00ff88">R$ 45.500 = 1,1% do incidente</text>
+  <text x="400" y="510" font-family="Courier New, monospace" font-size="10" fill="#ffaa00" font-weight="bold">Acao coletiva maxima:</text>
+  <text x="525" y="510" font-family="Courier New, monospace" font-size="10" fill="#ff8800">R$ 76.000.000 (15.247 x R$5.000)</text>
+
+  <text x="10" y="532" font-family="Courier New, monospace" font-size="8" fill="#333">Operacao Phantom Helper | Milvus Summit 2026 | Almir Meira Alves</text>
+</svg>

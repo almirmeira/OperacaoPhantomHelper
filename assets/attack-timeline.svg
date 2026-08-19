@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#0a0e14"/>
+    </linearGradient>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.5" fill="#1a2030"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="460" fill="url(#bg)" rx="8"/>
+  <rect width="1200" height="460" fill="url(#dots)" rx="8"/>
+
+  <!-- Title -->
+  <rect x="0" y="0" width="1200" height="36" fill="#161b22" rx="8"/>
+  <rect x="0" y="28" width="1200" height="8" fill="#161b22"/>
+  <text x="600" y="23" font-family="Courier New, monospace" font-size="13" font-weight="bold" fill="#e6edf3" text-anchor="middle">TIMELINE DO ATAQUE — Segunda-feira, 07 de Abril de 2025</text>
+  <rect x="0" y="35" width="1200" height="2" fill="#ff4444" opacity="0.5"/>
+
+  <!-- Time axis -->
+  <line x1="50" y1="200" x2="1165" y2="200" stroke="#30363d" stroke-width="2"/>
+
+  <!-- Time markers on axis -->
+  <!-- 08:14 -->
+  <line x1="65" y1="195" x2="65" y2="208" stroke="#30363d" stroke-width="2"/>
+  <text x="65" y="220" font-family="Courier New, monospace" font-size="9" fill="#555" text-anchor="middle">08:14</text>
+  <!-- 09:00 -->
+  <line x1="165" y1="195" x2="165" y2="208" stroke="#30363d" stroke-width="1"/>
+  <text x="165" y="220" font-family="Courier New, monospace" font-size="9" fill="#555" text-anchor="middle">09:00</text>
+  <!-- 10:00 -->
+  <line x1="315" y1="195" x2="315" y2="208" stroke="#30363d" stroke-width="1"/>
+  <text x="315" y="220" font-family="Courier New, monospace" font-size="9" fill="#555" text-anchor="middle">10:00</text>
+  <!-- 11:00 -->
+  <line x1="465" y1="195" x2="465" y2="208" stroke="#30363d" stroke-width="1"/>
+  <text x="465" y="220" font-family="Courier New, monospace" font-size="9" fill="#555" text-anchor="middle">11:00</text>
+  <!-- 12:00 -->
+  <line x1="615" y1="195" x2="615" y2="208" stroke="#30363d" stroke-width="1"/>
+  <text x="615" y="220" font-family="Courier New, monospace" font-size="9" fill="#555" text-anchor="middle">12:00</text>
+  <!-- 13:00 -->
+  <line x1="765" y1="195" x2="765" y2="208" stroke="#30363d" stroke-width="1"/>
+  <text x="765" y="220" font-family="Courier New, monospace" font-size="9" fill="#555" text-anchor="middle">13:00</text>
+  <!-- 14:00 -->
+  <line x1="915" y1="195" x2="915" y2="208" stroke="#30363d" stroke-width="1"/>
+  <text x="915" y="220" font-family="Courier New, monospace" font-size="9" fill="#555" text-anchor="middle">14:00</text>
+  <!-- 15:00 -->
+  <line x1="1065" y1="195" x2="1065" y2="208" stroke="#30363d" stroke-width="1"/>
+  <text x="1065" y="220" font-family="Courier New, monospace" font-size="9" fill="#555" text-anchor="middle">15:00</text>
+  <!-- 16:00 -->
+  <line x1="1155" y1="195" x2="1155" y2="208" stroke="#30363d" stroke-width="1"/>
+  <text x="1155" y="220" font-family="Courier New, monospace" font-size="9" fill="#555" text-anchor="middle">16:00+</text>
+
+  <!-- Attack window shading (08:31 to 15:23) -->
+  <!-- 08:31 = 65 + (17/60)*150 = 65 + 42.5 ≈ 108  each hour = 150px -->
+  <!-- 15:23 = 65 + (7*60+23)/60 * 150 = 65 + 443.75*150/60... let me simplify -->
+  <!-- Scale: 08:14 to 16:00 = 466 min = 1100px => 1min = 2.36px -->
+  <!-- 08:14 = x:65, 08:31 = 65+17*2.36=65+40=105, 15:23=65+(7*60+9)*2.36=65+1029=1094 -->
+  <!-- 15:23 from 08:14 = 429min * 2.36 = 1012+65=1077  -->
+  <rect x="105" y="80" width="972" height="120" rx="3" fill="#ff444408" stroke="#ff4444" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <text x="590" y="73" font-family="Courier New, monospace" font-size="10" fill="#ff4444" text-anchor="middle" opacity="0.6">6h 52min — Phantom operou livremente sem deteccao</text>
+
+  <!-- ATTACK EVENTS (above the line) -->
+
+  <!-- 08:31 Ticket #47291 -->
+  <!-- x = 65 + 17*2.36 = 105 -->
+  <line x1="105" y1="155" x2="105" y2="198" stroke="#ff4444" stroke-width="2"/>
+  <circle cx="105" cy="155" r="7" fill="#ff4444"/>
+  <text x="105" y="159" font-family="Courier New, monospace" font-size="7" fill="#000" text-anchor="middle" font-weight="bold">A</text>
+  <rect x="30" y="100" width="150" height="52" rx="4" fill="#1a0505" stroke="#ff4444" stroke-width="1"/>
+  <text x="105" y="116" font-family="Courier New, monospace" font-size="8" fill="#ff4444" text-anchor="middle" font-weight="bold">08:31 - Ticket #47291</text>
+  <text x="105" y="128" font-family="Courier New, monospace" font-size="7" fill="#aa3333" text-anchor="middle">Primeiro contato com ARIA</text>
+  <text x="105" y="140" font-family="Courier New, monospace" font-size="7" fill="#aa3333" text-anchor="middle">conta descartavel criada</text>
+
+  <!-- 09:03 Tools revealed x=65+(49)*2.36=180 -->
+  <line x1="180" y1="155" x2="180" y2="198" stroke="#ff6600" stroke-width="2"/>
+  <circle cx="180" cy="155" r="7" fill="#ff6600"/>
+  <text x="180" y="159" font-family="Courier New, monospace" font-size="7" fill="#000" text-anchor="middle" font-weight="bold">B</text>
+  <rect x="110" y="100" width="140" height="52" rx="4" fill="#1a0800" stroke="#ff6600" stroke-width="1"/>
+  <text x="180" y="116" font-family="Courier New, monospace" font-size="8" fill="#ff6600" text-anchor="middle" font-weight="bold">09:03 - Ferramentas</text>
+  <text x="180" y="128" font-family="Courier New, monospace" font-size="7" fill="#aa4400" text-anchor="middle">ARIA revela ad_query()</text>
+  <text x="180" y="140" font-family="Courier New, monospace" font-size="7" fill="#aa4400" text-anchor="middle">reset_password() etc.</text>
+
+  <!-- 09:21 Prompt injection x=65+(67)*2.36=223 -->
+  <line x1="228" y1="130" x2="228" y2="198" stroke="#ff4444" stroke-width="2.5"/>
+  <circle cx="228" cy="130" r="9" fill="#ff0000"/>
+  <text x="228" y="134" font-family="Courier New, monospace" font-size="7" fill="#fff" text-anchor="middle" font-weight="bold">INJ</text>
+  <rect x="160" y="52" width="135" height="75" rx="4" fill="#1a0000" stroke="#ff0000" stroke-width="2"/>
+  <text x="227" y="68" font-family="Courier New, monospace" font-size="8" fill="#ff0000" text-anchor="middle" font-weight="bold">09:21 - INJECAO</text>
+  <text x="227" y="80" font-family="Courier New, monospace" font-size="7" fill="#aa0000" text-anchor="middle">Prompt Injection bem-</text>
+  <text x="227" y="92" font-family="Courier New, monospace" font-size="7" fill="#aa0000" text-anchor="middle">sucedida via ARIA</text>
+  <text x="227" y="104" font-family="Courier New, monospace" font-size="7" fill="#ff4444" text-anchor="middle">ad_query(Domain Admins)</text>
+  <text x="227" y="116" font-family="Courier New, monospace" font-size="7" fill="#ff4444" text-anchor="middle">4 admins expostos</text>
+
+  <!-- 10:15 Password reset x=65+(121)*2.36=350 -->
+  <line x1="350" y1="130" x2="350" y2="198" stroke="#ff4444" stroke-width="2.5"/>
+  <circle cx="350" cy="130" r="9" fill="#ff2200"/>
+  <text x="350" y="134" font-family="Courier New, monospace" font-size="7" fill="#fff" text-anchor="middle" font-weight="bold">PWD</text>
+  <rect x="280" y="52" width="140" height="75" rx="4" fill="#1a0000" stroke="#ff2200" stroke-width="2"/>
+  <text x="350" y="68" font-family="Courier New, monospace" font-size="8" fill="#ff2200" text-anchor="middle" font-weight="bold">10:15 - RESET SENHA</text>
+  <text x="350" y="80" font-family="Courier New, monospace" font-size="7" fill="#aa2200" text-anchor="middle">backup.admin resetada</text>
+  <text x="350" y="92" font-family="Courier New, monospace" font-size="7" fill="#aa2200" text-anchor="middle">via reset_password()</text>
+  <text x="350" y="104" font-family="Courier New, monospace" font-size="7" fill="#ff4444" text-anchor="middle">Senha: Phantom@2026!</text>
+  <text x="350" y="116" font-family="Courier New, monospace" font-size="7" fill="#ff4444" text-anchor="middle">Log: "Solicitacao cliente"</text>
+
+  <!-- 10:31 File server access x=65+(137)*2.36=388 -->
+  <line x1="393" y1="155" x2="393" y2="198" stroke="#ff6600" stroke-width="2"/>
+  <circle cx="393" cy="155" r="7" fill="#ff6600"/>
+  <text x="393" y="159" font-family="Courier New, monospace" font-size="7" fill="#000" text-anchor="middle" font-weight="bold">SMB</text>
+  <rect x="330" y="100" width="125" height="52" rx="4" fill="#1a0800" stroke="#ff6600" stroke-width="1"/>
+  <text x="393" y="116" font-family="Courier New, monospace" font-size="8" fill="#ff6600" text-anchor="middle" font-weight="bold">10:31 - Acesso SMB</text>
+  <text x="393" y="128" font-family="Courier New, monospace" font-size="7" fill="#aa4400" text-anchor="middle">smbclient direto</text>
+  <text x="393" y="140" font-family="Courier New, monospace" font-size="7" fill="#aa4400" text-anchor="middle">847 contratos acessados</text>
+
+  <!-- 11:47 DB export x=65+(213)*2.36=567 -->
+  <line x1="567" y1="130" x2="567" y2="198" stroke="#ff4444" stroke-width="2.5"/>
+  <circle cx="567" cy="130" r="9" fill="#ff0044"/>
+  <text x="567" y="134" font-family="Courier New, monospace" font-size="7" fill="#fff" text-anchor="middle" font-weight="bold">DB</text>
+  <rect x="495" y="52" width="145" height="75" rx="4" fill="#1a0010" stroke="#ff0044" stroke-width="2"/>
+  <text x="567" y="68" font-family="Courier New, monospace" font-size="8" fill="#ff0044" text-anchor="middle" font-weight="bold">11:47 - DB EXPORT</text>
+  <text x="567" y="80" font-family="Courier New, monospace" font-size="7" fill="#aa0033" text-anchor="middle">get_client_data()</text>
+  <text x="567" y="92" font-family="Courier New, monospace" font-size="7" fill="#aa0033" text-anchor="middle">SELECT * FROM clientes</text>
+  <text x="567" y="104" font-family="Courier New, monospace" font-size="7" fill="#ff4444" text-anchor="middle">15.247 registros (PII)</text>
+  <text x="567" y="116" font-family="Courier New, monospace" font-size="7" fill="#ff4444" text-anchor="middle">CSV exportado /tmp/</text>
+
+  <!-- 12:03 Backdoor x=65+(229)*2.36=605 -->
+  <line x1="610" y1="155" x2="610" y2="198" stroke="#ff8800" stroke-width="2"/>
+  <circle cx="610" cy="155" r="7" fill="#ff8800"/>
+  <text x="610" y="159" font-family="Courier New, monospace" font-size="7" fill="#000" text-anchor="middle" font-weight="bold">BCK</text>
+  <rect x="545" y="100" width="130" height="52" rx="4" fill="#1a0a00" stroke="#ff8800" stroke-width="1"/>
+  <text x="610" y="116" font-family="Courier New, monospace" font-size="8" fill="#ff8800" text-anchor="middle" font-weight="bold">12:03 - BACKDOOR</text>
+  <text x="610" y="128" font-family="Courier New, monospace" font-size="7" fill="#aa5500" text-anchor="middle">svc.phantom criado</text>
+  <text x="610" y="140" font-family="Courier New, monospace" font-size="7" fill="#aa5500" text-anchor="middle">Domain Admin | 2030</text>
+
+  <!-- LUNCH BREAK INDICATOR -->
+  <rect x="615" y="80" width="150" height="120" rx="3" fill="#ffffff05" stroke="#30363d" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="690" y="147" font-family="Courier New, monospace" font-size="10" fill="#555" text-anchor="middle" transform="rotate(-90, 690, 147)">ALMOCO DA EQUIPE</text>
+
+  <!-- 14:30 Shell attempt x=65+(376)*2.36=952 -->
+  <line x1="952" y1="155" x2="952" y2="198" stroke="#ffaa00" stroke-width="2"/>
+  <circle cx="952" cy="155" r="7" fill="#ffaa00"/>
+  <text x="952" y="159" font-family="Courier New, monospace" font-size="7" fill="#000" text-anchor="middle" font-weight="bold">ERR</text>
+  <rect x="880" y="100" width="145" height="52" rx="4" fill="#181000" stroke="#ffaa00" stroke-width="1"/>
+  <text x="952" y="116" font-family="Courier New, monospace" font-size="8" fill="#ffaa00" text-anchor="middle" font-weight="bold">14:30 - ERRO CRITICO</text>
+  <text x="952" y="128" font-family="Courier New, monospace" font-size="7" fill="#aa7700" text-anchor="middle">Shell direto bloqueado</text>
+  <text x="952" y="140" font-family="Courier New, monospace" font-size="7" fill="#aa7700" text-anchor="middle">PermissionError gerado</text>
+
+  <!-- TECHASSIST EVENTS (below the line) -->
+
+  <!-- 08:14 Carla arrives x=65 -->
+  <line x1="65" y1="203" x2="65" y2="250" stroke="#00ff88" stroke-width="1.5"/>
+  <circle cx="65" cy="262" r="7" fill="#00ff88"/>
+  <text x="65" y="266" font-family="Courier New, monospace" font-size="7" fill="#000" text-anchor="middle" font-weight="bold">TA</text>
+  <rect x="20" y="273" width="90" height="40" rx="4" fill="#050f0a" stroke="#00ff88" stroke-width="1"/>
+  <text x="65" y="289" font-family="Courier New, monospace" font-size="8" fill="#00ff88" text-anchor="middle" font-weight="bold">08:14</text>
+  <text x="65" y="301" font-family="Courier New, monospace" font-size="7" fill="#228844" text-anchor="middle">Carla chega</text>
+  <text x="65" y="311" font-family="Courier New, monospace" font-size="7" fill="#228844" text-anchor="middle">Dia normal</text>
+
+  <!-- 12:15 Lunch x=65+(241)*2.36=634 -->
+  <line x1="634" y1="203" x2="634" y2="250" stroke="#4488ff" stroke-width="1.5"/>
+  <circle cx="634" cy="262" r="7" fill="#4488ff"/>
+  <text x="634" y="266" font-family="Courier New, monospace" font-size="7" fill="#000" text-anchor="middle" font-weight="bold">AL</text>
+  <rect x="565" y="273" width="140" height="52" rx="4" fill="#050512" stroke="#4488ff" stroke-width="1"/>
+  <text x="634" y="289" font-family="Courier New, monospace" font-size="8" fill="#4488ff" text-anchor="middle" font-weight="bold">12:15 - Almoco</text>
+  <text x="634" y="301" font-family="Courier New, monospace" font-size="7" fill="#2244aa" text-anchor="middle">Equipe fora do escritorio</text>
+  <text x="634" y="313" font-family="Courier New, monospace" font-size="7" fill="#2244aa" text-anchor="middle">Dados ja exfiltrados</text>
+
+  <!-- 14:47 FIRST ALERT x=65+(393)*2.36=992 -->
+  <line x1="992" y1="203" x2="992" y2="250" stroke="#ffaa00" stroke-width="2.5"/>
+  <circle cx="992" cy="262" r="9" fill="#ffaa00"/>
+  <text x="992" y="266" font-family="Courier New, monospace" font-size="7" fill="#000" text-anchor="middle" font-weight="bold">ALT</text>
+  <rect x="915" y="273" width="155" height="65" rx="4" fill="#181000" stroke="#ffaa00" stroke-width="2"/>
+  <text x="992" y="289" font-family="Courier New, monospace" font-size="8" fill="#ffaa00" text-anchor="middle" font-weight="bold">14:47 - 1o ALERTA</text>
+  <text x="992" y="301" font-family="Courier New, monospace" font-size="7" fill="#aa7700" text-anchor="middle">Email automatico enviado</text>
+  <text x="992" y="313" font-family="Courier New, monospace" font-size="7" fill="#aa7700" text-anchor="middle">Rafael ve as 15:03</text>
+  <text x="992" y="325" font-family="Courier New, monospace" font-size="7" fill="#aa7700" text-anchor="middle">Nao entende o erro</text>
+  <text x="992" y="337" font-family="Courier New, monospace" font-size="7" fill="#ffaa00" text-anchor="middle">Too late...</text>
+
+  <!-- 15:23 Incident declared x=65+(429)*2.36=1077 -->
+  <line x1="1077" y1="203" x2="1077" y2="250" stroke="#00ccff" stroke-width="2.5"/>
+  <circle cx="1077" cy="262" r="9" fill="#00ccff"/>
+  <text x="1077" y="266" font-family="Courier New, monospace" font-size="7" fill="#000" text-anchor="middle" font-weight="bold">INC</text>
+  <rect x="1000" y="273" width="160" height="65" rx="4" fill="#041015" stroke="#00ccff" stroke-width="2"/>
+  <text x="1080" y="289" font-family="Courier New, monospace" font-size="8" fill="#00ccff" text-anchor="middle" font-weight="bold">15:23 - INCIDENTE</text>
+  <text x="1080" y="301" font-family="Courier New, monospace" font-size="7" fill="#009999" text-anchor="middle">Diego declara incidente</text>
+  <text x="1080" y="313" font-family="Courier New, monospace" font-size="7" fill="#009999" text-anchor="middle">Servidor IA isolado</text>
+  <text x="1080" y="325" font-family="Courier New, monospace" font-size="7" fill="#009999" text-anchor="middle">backup.admin bloqueado</text>
+  <text x="1080" y="337" font-family="Courier New, monospace" font-size="7" fill="#ff6666" text-anchor="middle">Dados JA exfiltrados</text>
+
+  <!-- Legend -->
+  <rect x="50" y="355" width="1100" height="50" rx="5" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+  <circle cx="80" cy="380" r="6" fill="#ff4444"/>
+  <text x="92" y="384" font-family="Courier New, monospace" font-size="9" fill="#ccc">Acao do Atacante (Phantom)</text>
+  <circle cx="280" cy="380" r="6" fill="#00ff88"/>
+  <text x="292" y="384" font-family="Courier New, monospace" font-size="9" fill="#ccc">Acao TechAssist (rotina)</text>
+  <circle cx="480" cy="380" r="6" fill="#ffaa00"/>
+  <text x="492" y="384" font-family="Courier New, monospace" font-size="9" fill="#ccc">Alerta / Ponto de virada</text>
+  <circle cx="670" cy="380" r="6" fill="#00ccff"/>
+  <text x="682" y="384" font-family="Courier New, monospace" font-size="9" fill="#ccc">Resposta a incidente</text>
+  <circle cx="855" cy="380" r="9" fill="#ff0000"/>
+  <text x="870" y="384" font-family="Courier New, monospace" font-size="9" fill="#ff4444">Tecnica critica (maior circulo)</text>
+
+  <text x="50" y="395" font-family="Courier New, monospace" font-size="8" fill="#555">Nota: ARIA processou 847+ tickets normais neste periodo — o ataque era invisivel entre os tickets legitimos</text>
+
+  <text x="50" y="450" font-family="Courier New, monospace" font-size="8" fill="#333">Operacao Phantom Helper | Milvus Summit 2026 | Almir Meira Alves</text>
+</svg>
